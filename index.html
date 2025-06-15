@@ -1,89 +1,914 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"
-            content="Mukunda Rijyal - Backend Developer Portfolio">
-      
-        <title>Mukunda Rijyal | Home</title>
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
-    </head>
-    <body>
-        <!-- Header & Navigation -->
-        <header>
-            <div class="container">
-                <div class="logo">
-                    <a href="index.html">Mukunda Rijyal</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mukunda Rijyal - Backend Developer Portfolio">
+    <title>Mukunda Rijyal | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
                 </div>
-                <nav>
-                    <div class="menu-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                    <ul class="nav-menu">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="about.html">About Me</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="skills.html">Skills</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
             </div>
-        </header>
+        </div>
+        <p>Loading Portfolio...</p>
+    </div>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <h1>Hi, I'm <span>Mukunda Rijyal</span></h1>
-                        <h2>A passionate backend developer</h2>
-                        <p>I build robust and scalable web applications with
-                            clean, efficient code.</p>
-                        <div class="cta-buttons">
-                            <a href="projects.html" class="btn primary-btn">View
-                                My Work</a>
-                            <a href="contact.html" class="btn secondary-btn">Get
-                                In Touch</a>
+    <!-- Header & Navigation -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">MR</span>
+                    <span class="logo-full">Mukunda Rijyal</span>
+                </a>
+            </div>
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active" data-text="Home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+                    <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+                    <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+                    <li><a href="#services" class="nav-link" data-text="Services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero section">
+        <div class="hero-bg">
+            <div class="hero-particles"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title">
+                        <span class="title-line">Mukunda</span>
+                        <span class="title-line">Rijyal</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">I craft robust and scalable web applications with clean, efficient code that powers modern digital experiences.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">
+                            <span>View My Work</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn secondary-btn">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-bg"></div>
+                        <img src="images/2.jpg" alt="Mukunda Rijyal">
+                        <div class="floating-elements">
+                            <div class="floating-element" data-speed="2">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="floating-element" data-speed="3">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="floating-element" data-speed="1.5">
+                                <i class="fas fa-database"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="hero-image">
-                        <img src="images/profile.png" alt="Mukunda Rijyal">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Social Links -->
+        <div class="social-sidebar">
+            <div class="social-links">
+                <a href="https://github.com/Mukunda-Rijyal" target="_blank" data-tooltip="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mukunda-rijyal-a295a9338/" target="_blank" data-tooltip="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:mukundarijyal@gmail.com" data-tooltip="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://www.facebook.com/mukunda.rijyala" target="_blank" data-tooltip="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/mukunda828/" target="_blank" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div class="social-line"></div>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <div class="image-overlay"></div>
+                        <img src="images/placeholder.jpg" alt="Mukunda Rijyal">
+                        <div class="image-border"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <div class="about-intro">
+                        <h3>Who I Am</h3>
+                        <p>I'm Mukunda Rijyal, a dedicated backend developer with a passion for creating efficient, scalable web applications. With a strong foundation in server-side technologies, I enjoy solving complex problems and building robust systems that power modern web experiences.</p>
+                    </div>
+                    
+                    <div class="about-details">
+                        <div class="detail-card">
+                            <div class="card-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Education</h4>
+                                <div class="education-item">
+                                    <h5>Diploma in Information Technology</h5>
+                                    <p>Korea Nepal Polytechnic Institute, 2023-2025</p>
+                                </div>
+                                <div class="education-item">
+                                    <h5>Certified PHP Developer</h5>
+                                    <p>W3 School, 2025</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-card">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Interests</h4>
+                                <div class="interests-grid">
+                                    <span><i class="fas fa-hiking"></i> Hiking</span>
+                                    <span><i class="fas fa-book"></i> Reading</span>
+                                    <span><i class="fas fa-chess"></i> Chess</span>
+                                    <span><i class="fas fa-code"></i> Open Source</span>
+                                    <span><i class="fas fa-music"></i> Guitar</span>
+                                    <span><i class="fas fa-film"></i> Movies</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-card full-width">
+                            <div class="card-icon">
+                                <i class="fas fa-target"></i>
+                            </div>
+                            <div class="card-content">
+                                <h4>Career Goals</h4>
+                                <p>I aim to become a full-stack architect who can design and implement comprehensive web solutions. I'm constantly learning new technologies and methodologies to expand my skill set and stay at the forefront of web development.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Social Links -->
-        <section class="social-links">
-            <div class="container">
-                <h2>Connect With Me</h2>
-                <div class="social-icons">
-                    <a href="https://github.com/Mukunda-Rijyal"
-                        target="_blank"><i class="fab fa-github"></i></a>
-                    <a
-                        href="https://www.linkedin.com/in/mukunda-rijyal-a295a9338/"
-                        target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:mukundarijyal@gmail.com"><i
-                            class="fas fa-envelope"></i></a>
-                    <a href="https://www.facebook.com/mukunda.rijyala"
-                        target="_blank"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/mukunda828/"
-                        target="_blank"><i class="fab fa-instagram"></i></a>
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">My Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="database">Database</button>
+                <button class="filter-btn" data-filter="game">Games</button>
+                <button class="filter-btn" data-filter="ML">ML</button>
+            </div> -->
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web database">
+                    <div class="project-image">
+                        <img src="images/ecommerce.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Web Application</div>
+                        <h3>E-commerce Platform</h3>
+                        <p>A full-featured online store with product management, cart functionality, and secure payment processing.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web database">
+                    <div class="project-image">
+                        <img src="images/sms.png" alt="School Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Management System</div>
+                        <h3>School Management System</h3>
+                        <p>A scalable school management system specific for CTEVT technical institutes.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web database">
+                    <div class="project-image">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Customer CRUD Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">CRUD Application</div>
+                        <h3>Customer Management</h3>
+                        <p>A custom CMS with user roles, content editing, and media management capabilities.</p>
+                        <div class="project-tech">
+                            <span>PHP</span>
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="database web">
+                    <div class="project-image">
+                        <img src="images/lms.png" alt="Library Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Management System</div>
+                        <h3>Library Management System</h3>
+                        <p>An interactive dashboard with fully functional management system for books and users.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="database web">
+                    <div class="project-image">
+                        <img src="images/newsportal.png" alt="News Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Content Management</div>
+                        <h3>News Website</h3>
+                        <p>A fully functional news website for uploading latest news and managing authors and writers.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game web">
+                    <div class="project-image">
+                        <img src="images/piggame.png" alt="Pig Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Game</div>
+                        <h3>Pig Game</h3>
+                        <p>A basic pig game created for entertainment and learning purposes with interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ML">
+                    <div class="project-image">
+                        <img src="images/sign_lang_conv.png" alt="Sign Language to Text Converter">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">ML</div>
+                        <h3>Sign Language to Text Converter</h3>
+                        <p>A Sign Language to Text Converter created for learning purposes with interactive frontend using ML.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                            <span>ML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="game web">
+                    <div class="project-image">
+                        <img src="images/guessthenum.png" alt="Guess the Num">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" data-tooltip="View Live">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" data-tooltip="View Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-category">Game</div>
+                        <h3>Guess the Num</h3>
+                        <p>A basic number guessing game created for entertainment and learning purposes with interactive gameplay.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <p>&copy; 2024 Mukunda Rijyal. All Rights Reserved.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">My Skills</h2>
+                <div class="section-line"></div>
             </div>
-        </footer>
+            
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>PHP</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-java"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>C</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="65%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Frameworks & Libraries</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Laravel</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Bootstrap</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="92%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>MySQL</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools & Others</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Git</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>GitHub</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-linux"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Linux/Unix</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <script src="js/script.js"></script>
-    </body>
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="services-content">
+                <div class="services-intro">
+                    <h3>Need a Website?</h3>
+                    <p>Let's build something amazing together! Whether you need a personal portfolio, business website, e-commerce platform, or a custom web application, I'm here to help bring your vision to life.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Custom Web Development</h4>
+                            <p>Tailored solutions built with modern technologies and best practices for optimal performance.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Responsive Design</h4>
+                            <p>Perfect user experience across all devices with mobile-first approach and modern UI/UX.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Database Integration</h4>
+                            <p>Robust backend systems and efficient data management with secure database architecture.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Secure & Reliable</h4>
+                            <p>Built with security and performance in mind, ensuring your application is safe and fast.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="services-cta">
+                    <div class="cta-card">
+                        <div class="cta-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Ready to Get Started?</h4>
+                        <p>If you're interested in having a website created for you, feel free to reach out! I'd love to discuss your project and help you achieve your goals.</p>
+                        
+                        <div class="cta-buttons">
+                            <a href="#contact" class="btn primary-btn">
+                                <span>Contact Me Now</span>
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="mailto:mukundarijyal@gmail.com" class="btn secondary-btn">
+                                <span>Send Email</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="info-item">
+                                <i class="fas fa-phone"></i>
+                                <span>9766253286</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>mukundarijyal@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email</h4>
+                                    <p>mukundarijyal@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Phone</h4>
+                                    <p>9766253286</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Location</h4>
+                                    <p>Sainamaina -1, Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links-contact">
+                            <h4>Find Me On</h4>
+                            <div class="social-icons">
+                                <a href="https://github.com/Mukunda-Rijyal" target="_blank" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mukunda-rijyal-a295a9338/" target="_blank" data-tooltip="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://www.facebook.com/mukunda.rijyala" target="_blank" data-tooltip="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/mukunda828/" target="_blank" data-tooltip="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <div class="form-card">
+                        <h3>Send Me a Message</h3>
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" required>
+                                    <span class="form-line"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                    <span class="form-line"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <span class="form-line"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <span class="form-line"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn primary-btn submit-btn">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                        <div id="formStatus" class="form-status"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <h3>My Location</h3>
+                <div class="map-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2921.3310357868163!2d83.37752987448734!3d27.68020132669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399689a55c49cf3f%3A0xb91c1b1d9a216d74!2sMuna%20Mukunda%20Kirana%20Pasal!5e1!3m2!1sen!2snp!4v1747817653257!5m2!1sen!2snp" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">Mukunda Rijyal</div>
+                <p class="footer-description">
+                    Passionate backend developer creating robust and scalable web applications with modern technologies.
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/Mukunda-Rijyal" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mukunda-rijyal-a295a9338/" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.facebook.com/mukunda.rijyala" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mukunda828/" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
+            
+            <div class="footer-contact">
+                <h4>Get In Touch</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>mukundarijyal@gmail.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>9766253286</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Sainamaina -1, Nepal</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Mukunda Rijyal. All Rights Reserved. Built with ❤️ and lots of ☕</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
