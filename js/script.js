@@ -206,18 +206,32 @@ contactForm.addEventListener("submit", async (e) => {
     return
   }
 
-  // Simulate form submission with better UX
+  // Submit form to sendmail.php
   const submitBtn = contactForm.querySelector(".submit-btn")
   const originalText = submitBtn.innerHTML
   submitBtn.innerHTML = '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>'
   submitBtn.disabled = true
 
   try {
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    // Submit form data to sendmail.php
+    const response = await fetch('sendmail.php', {
+      method: 'POST',
+      body: formData
+    })
 
-    showFormStatus("Thank you for your message! I'll get back to you within 24 hours.", "success")
-    contactForm.reset()
+    if (response.ok) {
+      // Check if the response is a redirect (PHP will handle redirection)
+      showFormStatus("Thank you for your message! I'll get back to you within 24 hours.", "success")
+      contactForm.reset()
+      
+      // Allow PHP to handle the redirect naturally
+      setTimeout(() => {
+        window.location.href = 'index.html#contact'
+      }, 1500)
+    } else {
+      const errorText = await response.text()
+      showFormStatus(errorText || "Sorry, there was an error sending your message. Please try again.", "error")
+    }
   } catch (error) {
     showFormStatus("Sorry, there was an error sending your message. Please try again.", "error")
   } finally {
